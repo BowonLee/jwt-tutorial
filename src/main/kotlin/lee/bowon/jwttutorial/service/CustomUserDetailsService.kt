@@ -12,6 +12,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException
 import org.springframework.stereotype.Component
 import java.util.stream.Collectors
 
+// 로그인 시 유저 정보와 권한 정보를 가져와 리턴해 주도록 한다.
 @Component("userDetailsService")
 class CustomUserDetailsService(
     private val userRepository: UserRepository
